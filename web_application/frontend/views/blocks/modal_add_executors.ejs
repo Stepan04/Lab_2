@@ -1,0 +1,55 @@
+<!-- Модальне вікно -->
+<div class="modal fade" id="modal_executors" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <!-- Заголовок модального вікна -->
+      <div class="modal-header border-secondary">
+        <div class="d-flex flex-column">
+          <span class="fs-3 lh-1" id="executor_title">#Title</span>
+        </div>
+        <button type="button" class="btn-close bg-primary" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Тіло модального вікна -->
+      <div class="modal-body">
+        <form>
+
+          <!-- Прізвище, ім’я, по батькові -->
+          <span class="fs-5">Назва</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary mb-2" id="executor_name" type="text"
+            placeholder="Назва">
+
+          <div class="row gx-3 mb-2">
+            <div class="col-12 col-sm-6">
+
+              <!-- Вік -->
+              <span class="fs-5">Кількість працівників</span>
+              <input class="form-control fs-5 bg-dark text-light border-primary" id="executor_employee_count" type="number"
+                placeholder="Кількість працівників">
+            </div>
+
+            <div class="col-12 mb-2 d-block d-sm-none"></div>
+            <div class="col-12 col-sm-6">
+
+              <!-- Лікар -->
+              <span class="fs-5">Досвід</span>
+              <input class="form-control fs-5 bg-dark text-light border-primary" id="executor_experience" type="number"
+                placeholder="Досвід">
+
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Кнопки модального вікна -->
+      <div class="modal-footer border-secondary">
+        <button class="btn btn-outline-primary" id="executor_yes" data-bs-dismiss="modal"
+          onclick="modal_add_executors()">#Yes</button>
+        <button class="btn btn-outline-secondary" id="executor_no" data-bs-dismiss="modal">Відміна</button>
+      </div>
+    </div>
+  </div>
+</div>
